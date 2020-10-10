@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
     <header class="top">
         <nav class="navBar">
-          <img id="logo" src="/images/spotify-logo.png" />
             <ul>
               <li>Home</li>
               <li>Sign Up</li>
@@ -16,34 +16,32 @@
             </ul>
         </nav>
         <div class="onTopOfImg"> 
-            <h1>Top 10 Marvel Heroes</h1>
-            <p>This is a totally unbiased list</p>
+            <h1>Find your Marvel character</h1>
+            <p>Add explanation</p>
         </div>
       </header>
-    <section class="the-list">
-      <!-- <div>
-        <h2>What’s on Spotify?</h2>
-        <hr size="6" color= #00B172>
-      </div> -->
-      <div class="features">
-        <div>
-          <img class="icon" src="/images/music-icon.png" />
-          <h3>Why?</h3> 
-          <p>Because both Marvel and Web Development have one thing in common: they're both awesome</p>
+    <section class="main">
+      <div class="getYourHero">
+          <div id="btn"></div>
+          <input id="strength" placeholder="0-100">
+          <p>strength<p>
+          <input id="speed" placeholder="0-100">
+          <p>speed</p>
+          <input id="durability" placeholder="0-100">
+          <p>durability<p>
+          <input id="power" placeholder="0-100">
+          <p>power<p>
+        <div id="text">
         </div>
         <div>
-          <img class="icon" src="/images/high-quality-icon.png" />
-          <h3>Top 10</h3>
-          <p>Check out my top 10 marvel superheroes... number 1 will surprise you!</p> 
+          <button id="button" type='button' style="background-color: green; font-weight: bolder;">Get hero</button>
         </div>
         <div>
-          <img class="icon" src="/images/devices-icon.png" />
-          <h3>Countdown</h3>
-          <p>Can't wait for the next MCU film? Me neither. Scroll down and count with me the days left until the next premiere</p> 
+          <button id="buttonRandom" type='button' style="background-color: red; font-weight: bolder;">Random hero</button>
         </div>
       </div>
     </section>
-    <section class="game">
+    <!-- <section class="game">
         <h1>Civil War - The Game</h1>
         <div class="countdown">
             
@@ -64,6 +62,7 @@
                  <span>seconds</span>
              </div>
         </div>
-    </section>
+    </section> -->
+    <script src="/JS/script.js"></script>
 </body>
 </html>
