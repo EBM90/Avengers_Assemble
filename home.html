@@ -1,49 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="/CSS/style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Assemble</title>
     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="/CSS/style.css" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
     <main>
-        <header class="top">
-            <nav class="navBar">
-                <ul>
-                  <li>Characters</li>
-                  <li>Sign Up</li>
-                  <li>Log In</li>
-                </ul>
+            <nav class="navbar navbar-expand-md navbar-light" style="background-color: red">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/logo.png" alt="Marvel" style="width: 100px"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Characters</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Log in</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </nav>
-            <div class="onTopOfImg"> 
-              <img src="/marvel.jpg" style="width: 375px;">
-                <h1>Avengers Assemble</h1>
-                <p>Epic sentence here</p>
+            <div id="slides" class="carousel slide" data-ride="carousel">
+              <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+              </ul>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/marvel.jpg">
+                  <div class="carousel-caption">
+                    <h1 class="display-2">Avengers Assemble</h1>
+                    <h3>The website with all the information on Marvel characters</h3>
+                    <button type="button" class="btn btn-outline-light btn-lg">Assemble</button>
+                  </div>
+                </div>
+                <div class="carousel-item>">
+                  <img src="/assemble.jpg">
+                </div>
+                <div class="carousel-item>">
+                  <img src="/civilwar.jpg">
+                </div>
+              </div>
             </div>
-          </header>
         <section class="whatsOn">
            <div>
-            <h2>What’s on Spotify?</h2>
+            <h2>Welcome to Avengers Assemble</h2>
           </div> 
           <div class="features">
-            <div>
-            
-              <h3>Why?</h3> 
-              <p>Because both Marvel and Web Development have one thing in common: they're both awesome</p>
+            <div>  
+              <h3>What's Avengers Assemble?</h3>
+              <p>Avengers Assemble is a web app designed to help users
+                find out more information about Marvel characters and test
+                their knowledge. </p> 
             </div>
             <div>
-              
-              <h3>Characters</h3>
-              <p>Find out who is the strongest Marvel character, the fastest... 
-                And find out when they first appeared</p> 
+              <h3>Why this topic?</h3>
+              <p>Because Marvel is awsome, just like web developing!</p> 
             </div>
             <div>
-      
-              <h3>Countdown</h3>
-              <p>Can't wait for the next MCU film? Me neither. 
-                Scroll down and count with me the days left until the next premiere</p> 
+              <h3>Characters</h3> 
+              <p>Everybody knows about the MCU characters, but what about the comics?
+                Test your knowlege in the <b><em>characters</em></b> section and see how well you do?
+              </p>
             </div>
           </div>
         </section> 
@@ -73,5 +106,10 @@
         </section>
       </main>
       <script src="/JS/home.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+      
 </body>
 </html>

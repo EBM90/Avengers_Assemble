@@ -4,28 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="/CSS/style.css" rel="stylesheet">
 </head>
 <body>
     <main>
-        <header class="top">
-            <nav class="navBar">
-                <ul>
-                  <li>Home</li>
-                  <li>Characters</li>
-                  <li>Log In</li>
+        <nav class="navbar navbar-expand-md navbar-light" style="background-color: red">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="/logo.png" alt="Marvel" style="width: 100px"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Characters</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Up</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Log in</a>
+                  </li>
                 </ul>
-            </nav>
-            <div class="signUp"> 
-                <h1>Sign up!</h1>
-                <div><input id="name" type="text" placeholder="Name"></div>
-                <div><input id="character" type="text" placeholder="Favorite character"></div>
-                <div><input id="email" type="text" placeholder="Email"></div>
-                <div><input id="password" type="text" placeholder="Password"></div>
-                <div><input id="repeat" type="text" placeholder="Repeat password"></div>
+              </div>
             </div>
-            <button id="assemble">Assemble!</button>
-            <div id="error"></div>
+          </nav>
+            <div class="signUp"> 
+                <h1>Sign up to Avengers Assemble!</h1>
+                <img src="/iwantyou.png" style="width: 300px"/>
+                <div class="inputUser"><input id="name" type="text" style="border-radius: 30%;" placeholder="Name"></div>
+                <div class="inputUser"><input id="character" type="text" placeholder="Favorite character"></div>
+                <div class="inputUser"><input id="email" type="text" placeholder="Email"></div>
+                <div class="inputUser"><input id="password" type="password" placeholder="Password"></div>
+                <div class="inputUser"><input id="repeat" type="password" placeholder="Repeat password"></div>
+                <button id="assemble">Assemble!</button>
+                <div class="message-container"></div>
+            </div>  
         </header>
-    <script src="signup"></script>
+    <script src="/JS/signup.js"></script>
+    <script src="/JS/user.js"></script>
+    <script src="/JS/database.js"></script>
+    <script src="/JS/validator.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -2,57 +2,87 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: sans-serif;
-    margin: 0;
-    flex-direction: column;
-    color: yellow;
-}
-
-h1 {
-    font-weight: normal;
-    color:red;
-    font-size: 3rem;
-    margin-bottom: 5rem;
-}
-
-.getYourHeroe{
-    display: flex;
-    flex-direction: row;
+html, body{
+    height: 100%;
     width: 100%;
+    font-family: sans-serif;
+    color: black;
 }
 
+.navbar {
+    padding: .8rem;
+}
 
-.countdown {
-    color: white;
+.navbar-nav li {
+    padding-right: 20px;
+}
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+.main{
+    background-color: #3d7ea6;
+    padding: 0 20px 20px 20px;
+}
+.getYourHero{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+}
+
+#btn{
+    display: flex;
     flex-direction: column;
 }
+.input{
+    margin: 15px 5px;
+    width: 70%
+}
+
+.stats {
+    display: flex;
+    justify-content: right;
+}
+
+.stats p {
+    display: flex;
+    align-items: flex-end;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.countdown-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.countdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 #time{
     display: flex;
+    margin: 0px
+}
+
+.signUp{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    margin: 20px 20px;
 }
 
-.big-text {
-    font-weight: bold;
-    font-size: 2rem;
-    line-height: 1;
-    margin: 0 2rem;
+.inputUser{
+    margin: 10px 0
 }
 
-.countdown-el {
-    text-align: center;
-}
-
-.countdown-el span {
-    font-size: 1.5em;
+.play{
+    display: flex;
+    flex-direction: column;
 }

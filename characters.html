@@ -3,66 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Characters</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="/CSS/style.css" rel="stylesheet">
 </head>
 <body>
-    <header class="top">
-        <nav class="navBar">
-            <ul>
-              <li>Home</li>
-              <li>Sign Up</li>
-              <li>Log In</li>
-            </ul>
-        </nav>
-        <div class="onTopOfImg"> 
-            <h1>Find your Marvel character</h1>
-            <p>Add explanation</p>
-        </div>
-      </header>
-    <section class="main">
-      <div class="getYourHero">
-          <div id="btn"></div>
-          <input id="strength" placeholder="0-100">
-          <p>strength<p>
-          <input id="speed" placeholder="0-100">
-          <p>speed</p>
-          <input id="durability" placeholder="0-100">
-          <p>durability<p>
-          <input id="power" placeholder="0-100">
-          <p>power<p>
-        <div id="text">
-        </div>
-        <div>
-          <button id="button" type='button' style="background-color: green; font-weight: bolder;">Get hero</button>
-        </div>
-        <div>
-          <button id="buttonRandom" type='button' style="background-color: red; font-weight: bolder;">Random hero</button>
+  <main>
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: red">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/logo.png" alt="Marvel" style="width: 100px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log in</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <!-- <section class="game">
-        <h1>Civil War - The Game</h1>
-        <div class="countdown">
-            
-            <div class="countdown-el days-c">
-               <p class="big-text" id="days">0</p> 
-                <span>days</span>
-            </div>
-            <div class="countdown-el hours-c">
-                <p class="big-text" id="hours">0</p> 
-                 <span>hours</span>
-             </div>
-             <div class="countdown-el min-c">
-                <p class="big-text" id="min">0</p> 
-                 <span>minutes</span>
-             </div>
-             <div class="countdown-el sec-c">
-                <p class="big-text" id="sec">0</p> 
-                 <span>seconds</span>
-             </div>
+    </nav>
+      <section class="main">
+        <h1>Get your Marvel character</h1>
+         <p>Choose a number between 0 and 100 for each of the four powerstats and "Get character" which is closest to those traits.
+              Or, you can use the "Get random" button to get any Marvel character and see their stats. </p>
+        <div  class="getYourHero">
+            <div id="btn"><img src="/Marvel_Universe_(Civil_War).jpg" alt="guess" style="width: 150px"></div>
+            <div class="input">
+              <div class="stats">
+                <input class="input" id="strength" placeholder="0-100">
+                <p>STRENGTH<p>
+              </div>
+              <div class="stats">
+                <input class="input" id="speed" placeholder="0-100">
+                <p>SPEED</p>
+              </div>
+              <div class="stats">
+                <input class="input" id="durability" placeholder="0-100">
+                <p>DURABILITY<p>
+              </div>
+              <div class="stats">
+                <input class="input" id="power" placeholder="0-100">
+                <p>POWER<p>
+              </div>
+            </div>  
+        </div>        
+          <div id="text">
+          </div>
+          <div class="buttons">
+            <button id="button" type='button' style="background-color:  #19d3da; font-weight: bolder;">Get hero</button>
+            <button id="buttonRandom" type='button' style="background-color: red; font-weight: bolder;">Random hero</button>
+          </div>
+        </div>    
+      <div class="game">
+        <h1>Guess the stats</h1>
+         <p>You think you know all about Marvel characters? 
+           put your knowledge to the test with this short mini-game.
+           You will get 5 random Marvel characters, guess their stats as
+           close as possible. The closer you are, the more points you will get. </p>
+        <div  class="play">
+            <div><img src="/Marvel_Universe_(Civil_War).jpg" alt="guess" style="width: 150px"></div>
         </div>
-    </section> -->
-    <script src="/JS/script.js"></script>
-</body>
+        <div class="buttons">
+          <button id="buttonStart" type='button' style="background-color: #19d3da; font-weight: bolder;">Get character</button>
+         </div>
+      </div>
+    </section>
+    </main>
+      <script src="/JS/script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
 </html>
