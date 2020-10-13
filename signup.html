@@ -10,9 +10,9 @@
 </head>
 <body>
     <main>
-        <nav class="navbar navbar-expand-md navbar-light" style="background-color: red">
+        <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="/logo.png" alt="Marvel" style="width: 100px"></a>
+              <a class="navbar-brand" href="#"><img src="/logo.png" alt="Marvel" ></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse"
               data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
@@ -20,27 +20,27 @@
               <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Characters</a>
+                    <a class="nav-link" href="/home.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Sign Up</a>
+                    <a class="nav-link" href="/characters.html">Characters</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Log in</a>
+                    <a class="nav-link" href="/login.html">Log in</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
-            <div class="signUp"> 
-                <h1>Sign up to Avengers Assemble!</h1>
-                <img src="/iwantyou.png" style="width: 300px"/>
-                <div class="inputUser"><input id="name" type="text" style="border-radius: 30%;" placeholder="Name"></div>
+            <div class="feature"> 
+                <h1 style="text-decoration: underline;">Sign up!</h1>
+                <img src="/iwantyou.png" style="width: 300px; border-radius: 1em;"/>
+                <div class="inputUser"><input id="name" type="text" style="border-radius: 1em" placeholder="Name"></div>
                 <div class="inputUser"><input id="character" type="text" placeholder="Favorite character"></div>
                 <div class="inputUser"><input id="email" type="text" placeholder="Email"></div>
                 <div class="inputUser"><input id="password" type="password" placeholder="Password"></div>
                 <div class="inputUser"><input id="repeat" type="password" placeholder="Repeat password"></div>
-                <button id="assemble">Assemble!</button>
+                <button class="buttonPlay" id="assemble">Assemble!</button>
                 <div class="message-container"></div>
             </div>  
         </header>

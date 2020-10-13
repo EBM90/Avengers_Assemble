@@ -89,10 +89,10 @@ async function start(){
   let hero = marvel[Math.floor(Math.random()*marvel.length)]
   let game = document.querySelector('.play')
   if(counter === 0){
-    game.innerHTML= `<h3>${hero.name}</h3> <h5>Total score: ${totalScore}</h5>
-      
-      <div class="input">
-      <img src="${hero.images.sm}" />
+    game.innerHTML= `
+        <div class="getYourHero">
+        <div id="btn"><img src="${hero.images.sm}" /></div>
+          <div class="input">
             <div class="stats">
               <input class="input" id="strengthGame" placeholder="0-100">
               <p>STRENGTH<p>
@@ -109,12 +109,16 @@ async function start(){
               <input class="input" id="powerGame" placeholder="0-100">
               <p>POWER<p>
             </div>
-          </div>`
+        </div>
+      </div>
+      <h3>${hero.name}</h3> 
+    <h5>Total score: ${totalScore}</h5>
+    `
       counter++
       
   } else if(counter === 5) {
     game.innerHTML= `<h3>Congratulations</h3> <h5>Your total score is ${totalScore} </h5>
-    <button id="again" style="width: 150px">Play Again?</button>`
+    <button class="buttonPlay" id="again">Play Again?</button>`
     document.getElementById('again').addEventListener('click', newGame)
   } else {
     let strength = document.getElementById('strengthGame').value
@@ -146,10 +150,10 @@ async function start(){
       }
     }
     counter++
-    game.innerHTML= `<h3>${hero.name}</h3> <h5>Total score: ${totalScore}</h5>
-      
-      <div class="input">
-      <img src="${hero.images.sm}" />
+    game.innerHTML= `
+        <div class="getYourHero">
+        <div id="btn"><img src="${hero.images.sm}" /></div>
+          <div class="input">
             <div class="stats">
               <input class="input" id="strengthGame" placeholder="0-100">
               <p>STRENGTH<p>
@@ -166,7 +170,10 @@ async function start(){
               <input class="input" id="powerGame" placeholder="0-100">
               <p>POWER<p>
             </div>
-          </div>`
+        </div>
+      </div>
+      <h3>${hero.name}</h3> 
+    <h5>Total score: ${totalScore}</h5>`
   }
   
   console.log(totalScore)

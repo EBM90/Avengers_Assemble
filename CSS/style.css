@@ -1,3 +1,8 @@
+@font-face {
+    font-family: babySchool;
+    src: url(BabySchoolItalic.ttf);
+  }
+
 * {
     box-sizing: border-box;
 }
@@ -7,6 +12,9 @@ html, body{
     width: 100%;
     font-family: sans-serif;
     color: black;
+    background-color: #f7d281;
+   
+    /* text-shadow: 5px 5px 5px #000; */
 }
 
 .navbar {
@@ -17,25 +25,115 @@ html, body{
     padding-right: 20px;
 }
 .nav-link {
-    font-size: 1.1em !important;
+    font-size: 1.5em !important;
+    font-weight: bold;
+    background-color: #1a323e;
+    border: 2px solid black;
+    border-radius: 1rem;
+    text-align: center;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+.navbar {
+    background-color: #902724
+}
+
+.navbar-brand img{
+    width: 100px; 
+    border-radius: 1rem; 
+    border: #1a323e 5px solid; 
+    border-style: groove;
+}
+
+.navbar-toggler{
+    background-color: #1a323e;
 }
 
 .main{
-    background-color: #3d7ea6;
-    padding: 0 20px 20px 20px;
+    text-align: center;
+    padding: 0px 5px 20px 0px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color:#1a323e;
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 1em;
+    color: white;
+    border: 10px solid #902724;
+    border-style: groove;
+    transition: 1s ease;
+}
+
+.feature h1{
+    font-size:2.55em;
+}
+
+.feature h3{
+    font-size: 1.5em;
+    text-decoration: underline;
+    
+}
+
+.buttonPlay{
+    font-weight: bolder;
+    background-color:  #1b729f ;
+    border-radius: 1em;
+    margin: 10px;
+}
+
+#buttonRandom{
+    font-weight: bolder;
+    background-color:  #902724;
+    border-radius: 1em;
+}
+
+#again{
+    background-color: #902724;
+}
+
+.countdown-section h1{
+    display: flex;
+    justify-content: center;
+}
+
+
+.big-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 0 2rem;
+}
+
+.countdown-el {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.countdown-el span {
+    font-size: 0.7em;
+}
+
+.time{
+    display: flex;
+    font-size: 1.5em;
+    justify-content: space-around;
 }
 .getYourHero{
     display: flex;
     align-items: center;
 }
 
-#btn{
-    display: flex;
-    flex-direction: column;
-}
-.input{
+
+.input input, textarea{
     margin: 15px 5px;
-    width: 70%
+    width: 100%;
+    background-color: #f7d281;
 }
 
 .stats {
@@ -50,39 +148,41 @@ html, body{
 
 .buttons{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    font-weight: bolder;
 }
 
-.countdown-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.countdown{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-#time{
-    display: flex;
-    margin: 0px
-}
-
-.signUp{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 20px;
-}
 
 .inputUser{
-    margin: 10px 0
+    border-radius: 1em;
+    border: 4px solid #902724;
+    margin: 10px;
+}
+
+.inputUser input{
+    border-radius: 1em;  
+    text-align: center;
 }
 
 .play{
     display: flex;
     flex-direction: column;
+}
+
+.message-container p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color:#902724;
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 1em;
+    color: black;
+    border: 10px solid #f7d281;
+    border-style: groove;
+    transition: 1s ease;
+    text-align: center;
+    font-weight: bold;
 }
