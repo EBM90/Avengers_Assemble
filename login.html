@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link href="/CSS/style.css" rel="stylesheet">
 </head>
 <body>
     <main>
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="/logo.png" alt="Marvel"></a>
+              <a class="navbar-brand" href="#"><img src="/pics/logo.png" alt="Marvel"></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse"
               data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <a class="nav-link" href="/home.html">Home</a>
                   </li>
                   <li class="nav-item">
@@ -32,13 +32,15 @@
               </div>
             </div>
           </nav>
-            <div class="feature"> 
+            <div class="features"> 
+              <div id="signup" class="feature"> 
                 <h1 style="text-decoration: underline;">Log in</h1>
-                <img src="/ironman.png" alt="ironman" style="width: 100%;">
+                <img src="/pics/ironman.png" alt="ironman">
                 <div class="inputUser"><input id="email" type="text" placeholder="Email"></div>
                 <div class="inputUser"><input id="password" type="password" placeholder="Password"></div>
                 <button class="buttonPlay" id="assemble">Assemble!</button>
                 <div class="message-container"></div>
+              </div>
             </div>  
         </header>
         <script src="/JS/login.js"></script>
