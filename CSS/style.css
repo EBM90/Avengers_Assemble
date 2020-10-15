@@ -115,7 +115,7 @@ html, body{
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 1;
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
 .countdown-el {
@@ -143,6 +143,7 @@ html, body{
     margin: 15px 10px;
     width: 70px;
     background-color: #f7d281;
+    text-align: center;
 }
 
 
@@ -250,6 +251,7 @@ h2{
 
 #searchInp{
     width: 180px;
+    text-align: center;
 }
 
 @media screen and (min-width: 700px){
