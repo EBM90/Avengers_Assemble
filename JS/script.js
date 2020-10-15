@@ -13,7 +13,6 @@ async function getProfiles(){
     return marvel
 }
 
-
 async function yourHero(strength, speed, durability, power, random = false){
     const heroes = await getProfiles()
     let randomHero=[] 
@@ -43,9 +42,19 @@ async function yourHero(strength, speed, durability, power, random = false){
     }
       if(randomHero.length === 0){
         heroes.forEach(function(heroe){
-        getRandom(heroe,38)
-    })
-  }
+        getRandom(heroe,30)
+      })
+    }
+      if(randomHero.length === 0){
+        heroes.forEach(function(heroe){
+        getRandom(heroe,40)
+      })
+    }
+      if(randomHero.length === 0){
+        heroes.forEach(function(heroe){
+        getRandom(heroe,45)
+      })
+    }
   
    let finalHero = randomHero[Math.floor(Math.random()*randomHero.length)]
    let imageHero = finalHero.images.sm
@@ -81,138 +90,6 @@ async function yourRandom() {
     yourHero(strength, speed, durability, power, true)
 }
 
-
-    
-
-async function startNow(){
-  const marvel = await getProfiles()
-  
-  let hero = marvel[Math.floor(Math.random()*marvel.length)]
-
-  let game = document.querySelector('.play')
-    game.innerHTML= `
-        <div class="getYourHero">
-        <div id="btn"><img src="${hero.images.sm}" /></div>
-          <div class="input">
-            <div class="stats">
-              <input class="input" id="strengthGame" placeholder="0-100">
-              <p>STRENGTH<p>
-            </div>
-            <div class="stats">
-              <input class="input" id="speedGame" placeholder="0-100">
-              <p>SPEED</p>
-            </div>
-            <div class="stats">
-              <input class="input" id="durabilityGame" placeholder="0-100">
-              <p>DURABILITY<p>
-            </div>
-            <div class="stats">
-              <input class="input" id="powerGame" placeholder="0-100">
-              <p>POWER<p>
-            </div>
-        </div>
-      </div>
-      <h3>${hero.name}</h3> 
-    <h5>Total score: ${totalScore}</h5>`
-    let strength = document.getElementById('strengthGame').value
-    let speed = document.getElementById('speedGame').value
-    let durability = document.getElementById('durabilityGame').value
-    let power = document.getElementById('powerGame').value
-    // if(counter === 0){
-    //   let differences = []
-
-    // let diffStrength = Math.abs(strength-hero.powerstats.strength)  
-    // let diffSpeed = Math.abs(speed-hero.powerstats.speed) 
-    // let diffDura = Math.abs(durability-hero.powerstats.durability)
-    // let diffPower = Math.abs(power-hero.powerstats.power)
-
-    // differences.push(diffStrength)
-    // differences.push(diffSpeed)
-    // differences.push(diffDura)
-    // differences.push(diffPower)
-
-    // for(let i = 0; i < differences.length; i++){
-    //   if(differences[i]===0){
-    //     totalScore += 25
-    //   } else if(differences[i]<=10){
-    //     totalScore += 15
-    //   } else if(differences[i]<=20){
-    //     totalScore += 5
-    //   }
-    // }
-    // console.log(hero.powerstats.strength, hero.powerstats.speed, hero.powerstats.durability, hero.powerstats.power)
-    // console.log('difference strength: ' + diffStrength)
-    // console.log('user strength: ' + strength)
-    // console.log(hero.name)
-    //   counter++
-      
-   if(counter === 5) {
-    game.innerHTML= `<h3>Congratulations</h3> <h5>Your total score is ${totalScore} </h5>
-    <button class="buttonPlay" id="again">Play Again?</button>`
-    document.getElementById('again').addEventListener('click', newGame)
-  } else {
-  
-    // strength = document.getElementById('strengthGame').value
-    // speed = document.getElementById('speedGame').value
-    // durability = document.getElementById('durabilityGame').value
-    // power = document.getElementById('powerGame').value
-    console.log(strength, speed, durability, power)
-
-    let differences = []
-
-    let diffStrength = Math.abs(strength-hero.powerstats.strength)  
-    let diffSpeed = Math.abs(speed-hero.powerstats.speed) 
-    let diffDura = Math.abs(durability-hero.powerstats.durability)
-    let diffPower = Math.abs(power-hero.powerstats.power)
-
-    differences.push(diffStrength)
-    differences.push(diffSpeed)
-    differences.push(diffDura)
-    differences.push(diffPower)
-
-    for(let i = 0; i < differences.length; i++){
-      if(differences[i]===0){
-        totalScore += 25
-      } else if(differences[i]<=10){
-        totalScore += 15
-      } else if(differences[i]<=20){
-        totalScore += 5
-      }
-    }
-    console.log(hero.powerstats.strength, hero.powerstats.speed, hero.powerstats.durability, hero.powerstats.power)
-    console.log('difference strength: ' + diffStrength)
-    console.log('user strength: ' + strength)
-    console.log(hero.name)
-    counter++
-  //   game.innerHTML= `
-  //       <div class="getYourHero">
-  //       <div id="btn"><img src="${hero.images.sm}" /></div>
-  //         <div class="input">
-  //           <div class="stats">
-  //             <input class="input" id="strengthGame" placeholder="0-100">
-  //             <p>STRENGTH<p>
-  //           </div>
-  //           <div class="stats">
-  //             <input class="input" id="speedGame" placeholder="0-100">
-  //             <p>SPEED</p>
-  //           </div>
-  //           <div class="stats">
-  //             <input class="input" id="durabilityGame" placeholder="0-100">
-  //             <p>DURABILITY<p>
-  //           </div>
-  //           <div class="stats">
-  //             <input class="input" id="powerGame" placeholder="0-100">
-  //             <p>POWER<p>
-  //           </div>
-  //       </div>
-  //     </div>
-  //     <h3>${hero.name}</h3> 
-  //   <h5>Total score: ${totalScore}</h5>`
-  // 
-}
-  
-  
-}
 let heroes = []
 
 let heroesGameSt = []
@@ -237,14 +114,31 @@ let game = document.querySelector('.play')
 async function start() {
   let totalScore = 0
   const marvel = await getProfiles()
+
+  if(heroesGameSt.length > 0){
+     counter = 0
+     heroes = []
+     heroesGameSt = []
+     heroesGameSp = []
+     heroesGameDu = []
+     heroesGamePw = []
+
+     inputGameSt = []
+     inputGameSp = []
+     inputGameDu = []
+     inputGamePw = []
+
+     diffSt = []
+     diffSp = []
+     diffDu = []
+     diffPw = []
+  }
   
   let hero1 = marvel[Math.floor(Math.random()*marvel.length)]
   let hero2 = marvel[Math.floor(Math.random()*marvel.length)]
   let hero3 = marvel[Math.floor(Math.random()*marvel.length)]
   let hero4 = marvel[Math.floor(Math.random()*marvel.length)]
   let hero5 = marvel[Math.floor(Math.random()*marvel.length)]
-
-  
 
   heroes.push(hero1)
   heroes.push(hero2)
@@ -283,9 +177,9 @@ async function start() {
             </div>
         </div>
       </div>
-      <h3>${currentHero.name}</h3> 
+      <h3>"${currentHero.name}"</h3> 
     <h5>Total score: ${totalScore}</h5>`
-
+    console.log(currentHero.powerstats.strength, currentHero.powerstats.speed, currentHero.powerstats.durability , currentHero.powerstats.power)
     counter++
 }
 
@@ -365,7 +259,6 @@ function getInput(){
       document.getElementById('again').addEventListener('click', start)
     } else {
     let currentHero = heroes[counter] 
-  let game = document.querySelector('.play')
     game.innerHTML= `
         <div class="getYourHero">
         <div id="btn"><img src="${currentHero.images.sm}" /></div>
@@ -388,18 +281,49 @@ function getInput(){
             </div>
         </div>
       </div>
-      <h3>${currentHero.name}</h3> 
+      <h3>"${currentHero.name}"</h3> 
     <h5>Total score: ${totalScore}</h5>`
-
+    console.log(currentHero.powerstats.strength, currentHero.powerstats.speed, currentHero.powerstats.durability , currentHero.powerstats.power)
     counter++
-    }
+    }    
 }
-
 
 document.getElementById('button').addEventListener('click', yourHero)
 document.getElementById('buttonRandom').addEventListener('click', yourRandom)
 document.getElementById('buttonStart').addEventListener('click', start)
 document.getElementById('next').addEventListener('click', getInput)
+
+
+const daysEl = document.getElementById('days');
+const hoursEl = document.getElementById('hours');
+const minEl = document.getElementById('min');
+const secEl = document.getElementById('sec');
+
+const firstDay = '07 May 2021 00:00';
+
+function countdown() {
+    const currentDay = new Date();
+    const firstDayHack = new Date(firstDay);
+
+    const totalSeconds = (firstDayHack - currentDay) / 1000;
+
+    const days = Math.floor(totalSeconds / 3600 / 24);
+
+    const hours = Math.floor(totalSeconds / 3600) % 24;
+
+    const minutes = Math.floor(totalSeconds / 60) % 60;
+
+    const seconds = Math.floor(totalSeconds % 60);
+
+    daysEl.innerHTML = days;
+    hoursEl.innerHTML = hours;
+    minEl.innerHTML = minutes;
+    secEl.innerHTML = seconds;
+
+}
+
+countdown();
+setInterval(countdown, 1000)
 
 
 

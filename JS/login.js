@@ -53,7 +53,7 @@ class Login {
   }
 
   redirect = () => {
-    setTimeout( ()=> location.assign('dashboard.html'), 2000);
+    setTimeout( ()=> location.assign('characters.html'), 2000);
   }
 
 }

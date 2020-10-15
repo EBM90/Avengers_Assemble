@@ -23,7 +23,7 @@ They will also be able to play a game to test their knowledge on this subject.
 ## Backlog    
 *Countdown*: A simple countdown indicating the days, minutes... left for the next MCU movie
 
-*Trivia*: A short section in 'Characters' where users can find out some interesting facts.
+*Search the hero*: A short section in 'Home' where the user will be able to search for their favorite characters and find information.
 
 ## Wireframes    
 You can find the wireframe in the *wireframe.jpg*

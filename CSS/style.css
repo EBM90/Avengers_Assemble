@@ -96,7 +96,6 @@ html, body{
 #buttonRandom{
     font-weight: bolder;
     background-color:  #902724;
-    border-radius: 1em;
 }
 
 #again{
@@ -108,6 +107,9 @@ html, body{
     justify-content: center;
 }
 
+#search{
+    width: 120px;
+}
 
 .big-text {
     font-weight: bold;
@@ -234,6 +236,22 @@ h2{
     font-size: 30px;
 }
 
+#next{
+    background-color:  #902724;
+}
+
+.words{
+    margin-top: 20px;
+}
+
+#searchApp img{
+    width: 180px;
+}
+
+#searchInp{
+    width: 180px;
+}
+
 @media screen and (min-width: 700px){
 
     h2{
@@ -250,9 +268,14 @@ h2{
         justify-content: center;
         align-items: center;
     }
-
     .feature{
-        width: 70%;
+        width: 80%;
+    }
+
+    .search{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .countdown-section{
@@ -287,10 +310,6 @@ h2{
         display: flex;
         align-items: center;
     }
-
-
-
-
 }
 
 @media screen and (min-width: 1000px){
@@ -305,8 +324,6 @@ h2{
     .welcome{
         font-size: 3em;
     }
-
-    
 
     h2{
         position: absolute;
@@ -348,6 +365,7 @@ h2{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        margin-top: 30px;
     }
 
     .navbar-brand img{
@@ -356,10 +374,18 @@ h2{
     }
 
     #count{
-        width: 60%;
+        width: 650px;
     }
     
     #signup{
         width: 50%;
+    }
+
+    #search{
+        width: 250px;
+    }
+
+    .textSearch{
+        display: flex;
     }
 }

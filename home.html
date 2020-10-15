@@ -42,8 +42,8 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <h2 class="welcome">Welcome to Avengers Assemble</h2>
-                  <img src="/pics/marvel.jpg" class="d-block w-100" alt="...">
-                  <h3 id="subtitle">The web where you can find all Marvel characters</h3>
+                  <img src="/pics/Marvel-en-2019-destacada.jpg" class="d-block w-100" alt="...">
+                  <h3 id="subtitle">The website where all the Marvel characters are assembled</h3>
                 </div>
                 <div class="carousel-item">
                   <h2 class="welcome">Welcome to Avengers Assemble</h2>
@@ -53,7 +53,7 @@
                 <div class="carousel-item">
                   <h2 class="welcome">Welcome to Avengers Assemble</h2>
                   <img src="/pics/marvelcomics.png" class="d-block w-100" alt="...">
-                  <h3 id="subtitle">Test your knowledge on characters from the Marvel comic books universe!</h3>
+                  <h3 id="subtitle">Test your knowledge on characters from the Marvel universe!</h3>
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -67,14 +67,13 @@
             </div>
           </section> </main>
 
-        <section>
+        <section class="main">
           <div class="features">
             <div class="feature">  
               <i class="far fa-play-circle icon"></i>
-              <h3>What's Avengers Assemble?</h3>
-              <p>Avengers Assemble is a web app designed to help users
-                find out more information about Marvel characters and test
-                their knowledge. </p> 
+              <h3>Avengers Assemble!</h3>
+              <p>Avengers Assemble is a website designed to help users
+                find out more information about Marvel characters. </p> 
             </div>
             <div class="feature">
               <i class="fas fa-mask icon"></i>
@@ -90,31 +89,41 @@
             </div>
           </div>
         </section> 
-
-        <section class="countdown-section">
-            <h1>Countdown for... </h1>
-            <div class="feature" id="count">
-              <div class="pic">
-                <img src="pics/blackwidow.jpg" style="width: 200px">
-              </div>
-                <div class="time">
-                  <div class="countdown-el days-c">
-                    <p class="big-text" id="days">0</p> 
-                     <span>days</span>
-                 </div>
-                 <div class="countdown-el hours-c">
-                     <p class="big-text" id="hours">0</p> 
-                      <span>hours</span>
-                  </div>
-                  <div class="countdown-el min-c">
-                     <p class="big-text" id="min">0</p> 
-                      <span>minutes</span>
-                  </div>
-                  <div class="countdown-el sec-c">
-                     <p class="big-text" id="sec">0</p> 
-                      <span>seconds</span>
-                  </div>
+        <section class="main">
+          <div class="search">
+            <h1>Find your character! </h1>
+            <div class="feature input" id="searchApp">
+              <p>Type a character's name and find out about their powerstats and much more</p>
+              <div class="textSearch"></div>
+              <input type="text" placeholder="type here" id="searchInp">
+              <button class="buttonPlay" id="searchBtn">Search</button>
+            </div>
+          </div>
+          <div class="countdown-section">
+              <h1>Countdown for... </h1>
+              <div class="feature" id="count">
+                <div class="pic">
+                  <img src="pics/blackwidow.jpg" style="width: 200px">
                 </div>
+                  <div class="time">
+                    <div class="countdown-el days-c">
+                      <p class="big-text" id="days">0</p> 
+                       <span>days</span>
+                   </div>
+                   <div class="countdown-el hours-c">
+                       <p class="big-text" id="hours">0</p> 
+                        <span>hours</span>
+                    </div>
+                    <div class="countdown-el min-c">
+                       <p class="big-text" id="min">0</p> 
+                        <span>minutes</span>
+                    </div>
+                    <div class="countdown-el sec-c">
+                       <p class="big-text" id="sec">0</p> 
+                        <span>seconds</span>
+                    </div>
+                  </div>
+              </div>
             </div>
         </section>
       </main>
