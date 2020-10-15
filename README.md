@@ -1,6 +1,6 @@
 # Avengers Assemble
 
-![Avengers assemble](/marvel.jpg)
+![Avengers assemble](./pics/assemble)
 
 ## Description
 Ever wondered who the *strongest* Marvel character is? Or the *fastest*? 
@@ -11,9 +11,9 @@ You can find the answers to these questions or prove your knowledge and more in 
 ## MVP (DOM - CANVAS)
 The MVP will cover the following:
 
-**Homepage**: The homepage will present the apps concept and features and provide links to the rest of the site.
+**Homepage**: The homepage will present the apps concept and features and provide links to the rest of the site. As well as a character searcher and a countdown to the next MCU film
 
-**Characters**: A user will be able to input a value for different categories and find the Marvel character that is closest to those values.
+**Characters**: A user will be able to input a value for different skills and find the Marvel character that is closest to those values.
 They will also be able to play a game to test their knowledge on this subject.
 
 **Signup**: A registration form for new users.
@@ -21,9 +21,11 @@ They will also be able to play a game to test their knowledge on this subject.
 **Login**: A sign in form for existing users.
 
 ## Backlog    
-*Countdown*: A simple countdown indicating the days, minutes... left for the next MCU movie
+*Highscore*: Keep a user's score and let them know when they've beaten their record.
 
-*Search the hero*: A short section in 'Home' where the user will be able to search for their favorite characters and find information.
+*Log in required*: Make it necessary for the user to log in in order to access the *Characters* section.
+
+*Log in symbol*: A small symbol that let's the user know they've logged in successfully.
 
 ## Wireframes    
 You can find the wireframe in the *wireframe.jpg*
@@ -47,9 +49,9 @@ Classes and methods definition
 ### Github
 URls for the project repo and deploy
 [Link Repo](https://github.com/EBM90/Avengers_Assemble)
-[Link Deploy](http://github.com)
+[Link Deploy](https://ebm90.github.io/Avengers_Assemble/)
 
 
 ### Slides
 URls for the project presentation (slides)
-[Link Slides.com](http://slides.com)
+[Link slides](https://docs.google.com/presentation/d/1Ys1WSpkJrm0iYDmOjLjvgvTFK6Ogi8orDjjXAxFeQT8/edit#slide=id.g53cc352e8e_0_5)
