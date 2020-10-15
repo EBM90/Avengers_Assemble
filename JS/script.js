@@ -5,7 +5,7 @@ async function getProfiles(){
     const comicsjson = await comics.json();
     const marvel =[]
     comicsjson.forEach(function(heroe){
-      if(heroe.biography.publisher === 'Marvel Comics'){
+      if(heroe.biography.publisher === 'Marvel Comics'|| heroe.name === 'Thor'){
         marvel.push(heroe)
       }
     })

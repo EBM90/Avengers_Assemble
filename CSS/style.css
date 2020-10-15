@@ -254,6 +254,20 @@ h2{
     text-align: center;
 }
 
+@media screen and (min-width: 450px){
+    h2{
+        left: 10%;
+    }
+
+}
+
+@media screen and (min-width: 600px){
+    h2{
+        left: 15%;
+    }
+
+}
+
 @media screen and (min-width: 700px){
 
     h2{
