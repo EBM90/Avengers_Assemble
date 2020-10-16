@@ -1,6 +1,6 @@
 # Avengers Assemble
 
-![Avengers assemble](./pics/assemble)
+![Avengers assemble]('./pics/fight.jpg')
 
 ## Description
 Ever wondered who the *strongest* Marvel character is? Or the *fastest*? 

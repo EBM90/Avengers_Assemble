@@ -88,11 +88,13 @@ html, body{
     border-radius: 1em;
     margin: 10px;
     font-size: 1.5em;
+    padding:10px;
 }
 
 #buttonRandom{
     font-weight: bolder;
     background-color:  #902724;
+    padding:10px;
 }
 
 #again{
@@ -400,5 +402,10 @@ h2{
 
     #mini-game img{
         width: 300px;
+    }
+
+    .buttonPlay{
+        padding: 20px;
+        
     }
 }
