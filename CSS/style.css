@@ -276,7 +276,6 @@ h2{
     .features{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
     .feature{
@@ -313,7 +312,7 @@ h2{
     }
 
     #btn img{
-        width: 180px;
+        width: 200px;
         
     }
 
@@ -401,7 +400,7 @@ h2{
     }
 
     #mini-game img{
-        width: 300px;
+        width: 200px;
     }
 
     .buttonPlay{
