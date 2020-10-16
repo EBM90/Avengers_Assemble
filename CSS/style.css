@@ -249,11 +249,14 @@ h2{
     text-align: center;
 }
 
+#thanos{
+    width: 60%;
+}
+
 @media screen and (min-width: 450px){
     h2{
         left: 10%;
     }
-
 }
 
 @media screen and (min-width: 600px){
@@ -338,6 +341,7 @@ h2{
     h2{
         position: absolute;
         top: 10%;
+        left: 20%;
         text-align: center;
         z-index: 1;
     }
@@ -397,10 +401,6 @@ h2{
 
     .textSearch{
         display: flex;
-    }
-
-    #mini-game img{
-        width: 200px;
     }
 
     .buttonPlay{
