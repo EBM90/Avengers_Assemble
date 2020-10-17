@@ -179,7 +179,7 @@ async function start() {
       </div>
       <h3>"${currentHero.name}"</h3> 
     <h5>Total score: ${totalScore}</h5>`
-    console.log(currentHero.powerstats.strength, currentHero.powerstats.speed, currentHero.powerstats.durability , currentHero.powerstats.power)
+
     counter++
 }
 
@@ -283,7 +283,7 @@ function getInput(){
       </div>
       <h3>"${currentHero.name}"</h3> 
     <h5>Total score: ${totalScore}</h5>`
-    console.log(currentHero.powerstats.strength, currentHero.powerstats.speed, currentHero.powerstats.durability , currentHero.powerstats.power)
+
     counter++
     }    
 }
