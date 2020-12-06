@@ -40,6 +40,6 @@ You can find the wireframe in the *wireframe.jpg*
 [Trello](https://trello.com/b/zhPxnUFt/proyecto-1)
 
 ### Github
-URls for the project repo and deploy
+URls for the project repo and deploy<br/>
 [Repository](https://github.com/EBM90/Avengers_Assemble)<br/>
 [Deploy](https://ebm90.github.io/Avengers_Assemble/)
