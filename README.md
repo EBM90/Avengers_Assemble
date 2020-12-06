@@ -8,7 +8,7 @@ Or perhaps you think you know everything there is to know about Marvel character
 You can find the answers to these questions or prove your knowledge and more in **Avengers Assemble**!
 
 
-## MVP (DOM - CANVAS)
+## MVP 
 The MVP will cover the following:
 
 **Homepage**: The homepage will present the apps concept and features and provide links to the rest of the site.
@@ -21,35 +21,25 @@ They will also be able to play a game to test their knowledge on this subject.
 **Login**: A sign in form for existing users.
 
 ## Backlog    
-*Countdown*: A simple countdown indicating the days, minutes... left for the next MCU movie
+*Countdown*: A simple countdown indicating the days, minutes... left for the next MCU movie. (done)
 
-*Search the hero*: A short section in 'Home' where the user will be able to search for their favorite characters and find information.
+*Search the hero*: A short section in 'Home' where the user will be able to search for their favorite characters and find information. (done)
+
+*Ranking*: Keeps track of the user's scores and let's them know when they've gotten a high score.
 
 ## Wireframes    
 You can find the wireframe in the *wireframe.jpg*
 
-
-## Data structure
-Classes and methods definition
-
-
 ## APIs
 'https://superheroapi-m1.herokuapp.com/heroes'
 
-
 ## Links
-
+[Avengers Assemble](https://ebm90.github.io/Avengers_Assemble/)
 
 ### Trello (list of tasks)
-[Link url](https://trello.com/b/zhPxnUFt/proyecto-1)
-
+[Trello](https://trello.com/b/zhPxnUFt/proyecto-1)
 
 ### Github
 URls for the project repo and deploy
-[Link Repo](https://github.com/EBM90/Avengers_Assemble)
-[Link Deploy](http://github.com)
-
-
-### Slides
-URls for the project presentation (slides)
-[Link Slides.com](http://slides.com)
+[Repository](https://github.com/EBM90/Avengers_Assemble)<br/>
+[Deploy](https://ebm90.github.io/Avengers_Assemble/)
